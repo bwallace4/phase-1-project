@@ -1,19 +1,36 @@
-const shoelist= document.querySelector(".shoe-list")
-console.log(shoelist);
-fetch(" http://localhost:3000/shoe").then(response => response.json())
-.then((shoe) => {
-shoe.forEach(shoebox)
-});
-
-const shoebox = (shoedata) => {
-   console.log( shoedata.name)
-console.log(shoedata)
-const shoeDiv = document.createElement("div")
-const shoePara = document.createElement("p")
-// const editBtn = document.createElement("button")
-// const deleteBtn = document.createElement("button")
-// const shoeInfo = document.createElement("p")
-shoePara.textContent = shoedata.name
-shoeDiv.append(shoePara)
-shoelist.append(shoeDiv)
+function searchPokemon (name){
+	var url = 'https://pokeapi.co/api/v2/pokemon/' + name 
+	fetch(url).then(function(response){
+		console.log(response);
+	})
 }
+
+async function getPokeMonList (){
+	var url = 'https://pokeapi.co/api/v2/pokemon/'; 
+	var response = await fetch(url)
+	var data = await response.json();
+
+	var result = data.results.forEach(function(item){
+	let selectOption = document.createElement('option');
+		selectOption.text = item.name;
+		selectOption.value = item.name;
+		document.getElementById('pokeSearch').append(selectOption);
+
+	});
+}
+
+function initEventListerners(){
+	document.getElementById('pokeSearchButton').addEventListener('click', function(){
+		var searchValue = document.getElementById('pokeSearch').value;
+		searchPokemon(searchValue);
+	});
+}
+
+function init(){
+	getPokeMonList();
+	initEventListerners();
+}
+
+document.addEventListener('DOMContentLoaded', function(event) { 
+  init();
+});
