@@ -1,6 +1,6 @@
 const shoelist= document.querySelector(".shoe-list")
 console.log(shoelist);
-fetch(" http://localhost:3000/shoe").then(response => response.json())
+fetch("https://cat-fact.herokuapp.com").then(response => response.json())
 .then((shoe) => {
 shoe.forEach(shoebox)
 });
