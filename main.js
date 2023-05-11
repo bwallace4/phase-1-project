@@ -6,6 +6,11 @@ fetch(" http://localhost:3000/shoe").then(response => response.json())
 shoe.forEach(shoebox)
 });
 
+let clickExample = document.querySelector("#clickExample");
+clickExample.addEventListener("click", function() {
+    console.log("I've been clicked");
+})
+
 const shoebox = (shoedata) => {
 
 const shoeDiv = document.createElement("div")
@@ -28,19 +33,13 @@ shoescript.append(image)
 shoeDiv.append(shoePara)
 shoelist.append(shoeDiv)
 shoePara.append(shoeInfo)
-
+// click on pictures to change images
 let toggle = true;
 image.addEventListener('click', function(){
    toggle = !toggle;
    if("toggle"){
     image.src = shoedata.alt_image
    }else{
-    image.src = "shoedata.alt-image"
-   
-   }
-    
-   
-  
-
-})
-}
+    image.src = shoedata.image
+    }
+})}
