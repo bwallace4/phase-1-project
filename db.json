@@ -4,7 +4,8 @@
         "id": 1,
         "name": "Concords",
         "type": "Jordans",
-        "description": "White & black"
+        "description": "White & black",
+        "image": "image.png"
 
         },
      {
