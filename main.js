@@ -38,12 +38,13 @@ shoeDiv.append(shoePara)
 shoelist.append(shoeDiv)
 shoePara.append(shoeInfo)
 // click on pictures to change images
-let toggle = true;
+var image_tracker = 'f';
 image.addEventListener('click', function(){
-   toggle = !toggle;
-   if("toggle"){
+   if(image_tracker == 'f'){
     image.src = shoedata.alt_image
+    image_tracker = 't';
    }else{
     image.src = shoedata.image
+    image_tracker = 'f';
     }
 })}
