@@ -10,6 +10,10 @@ let clickExample = document.querySelector("#clickExample");
 clickExample.addEventListener("click", function() {
     console.log("I've been clicked");
 })
+submitExample.addEventListener("submit", function(e){
+    e.preventDefault()
+    console.log("hello");
+})
 
 const shoebox = (shoedata) => {
 
