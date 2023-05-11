@@ -1,3 +1,4 @@
+
 const shoelist= document.querySelector(".shoe-list")
 console.log(shoelist);
 fetch(" http://localhost:3000/shoe").then(response => response.json())
@@ -6,7 +7,6 @@ shoe.forEach(shoebox)
 });
 
 const shoebox = (shoedata) => {
-   console.log( shoedata.name)
 console.log(shoedata)
 const shoeDiv = document.createElement("div")
 const shoePara = document.createElement("p")
