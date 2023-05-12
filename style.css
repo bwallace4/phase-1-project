@@ -3,9 +3,21 @@
     padding: 0;
 
 }
+.shoeDiv{
+    right: 0%;
+    align-items: center;
+    margin-top: 9%;
+    padding-left: 20px;
+    height: auto;
+    width: 100%;
+    font-style: italic;
+}
 .shoeImage{
-    max-width: 100px;
+    max-width: 300px;
     max-height: auto;
+    align-self: center;
+    position: relative;
+    margin: 0 250px;
 }
 .banner{
     width: auto;

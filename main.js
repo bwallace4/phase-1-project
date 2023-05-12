@@ -16,7 +16,7 @@ submitExample.addEventListener("submit", function(e){
 })
 
 const shoebox = (shoedata) => {
-
+// hover over text & change color
 const shoeDiv = document.createElement("div")
 shoeDiv.className = "shoeDiv"
 shoeDiv.addEventListener("mouseover",function(){
