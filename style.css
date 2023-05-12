@@ -9,8 +9,17 @@ h2{
     margin-top: 9%;
     padding-left: 20px;
     margin: 20px;
-    font-style: italic
+    font-style: italic;
+    border: 2px solid red;
+    cursor: pointer;
     
+    
+
+    
+}
+h3{
+    float: right;
+    margin: 50px;
 }
 
 .shoeDiv{
@@ -21,6 +30,7 @@ h2{
     margin: 20px;
     font-style: italic;
     font-size: large;
+   
 }
 .shoeImage{
     max-width: 350px;
@@ -28,6 +38,7 @@ h2{
     align-self: center;
     position: relative;
     margin: 0 250px;
+    cursor: pointer;
 }
 .banner{
     width: auto;
