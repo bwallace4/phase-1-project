@@ -8,7 +8,7 @@ shoe.forEach(shoebox)
 
 let clickExample = document.querySelector("#clickExample");
 clickExample.addEventListener("mouseover", function() {
-    console.log("clicked");
+    console.log("I've been clicked");
 })
 submitExample.addEventListener("submit", function(e){
     e.preventDefault()
