@@ -4,11 +4,12 @@
 
 }
 .shoeImage{
-    max-width: 200px;
+    max-width: 100px;
     max-height: auto;
 }
 .banner{
     width: auto;
+    background-image: url("https://img.freepik.com/free-vector/flat-laboratory-room-with-microscope_23-2148885022.jpg");
     background-size: cover;
     height: auto;
 

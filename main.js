@@ -7,17 +7,25 @@ shoe.forEach(shoebox)
 });
 
 let clickExample = document.querySelector("#clickExample");
-clickExample.addEventListener("click", function() {
+clickExample.addEventListener("mouseover", function() {
     console.log("I've been clicked");
 })
 submitExample.addEventListener("submit", function(e){
     e.preventDefault()
-    
+    console.log("hello")
 })
 
 const shoebox = (shoedata) => {
 
 const shoeDiv = document.createElement("div")
+shoeDiv.className = "shoeDiv"
+shoeDiv.addEventListener("mouseover",function(){
+    shoeDiv.style.color = "#FF0000";
+})
+shoeDiv.addEventListener("mouseleave",function(){
+    shoeDiv.style.color = "black";
+})
+
 const shoePara = document.createElement("p")
 const shoescript = document.createElement("div")
 const shoeInfo = document.createElement("div")
