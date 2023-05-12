@@ -6,11 +6,12 @@ fetch(" http://localhost:3000/shoe").then(response => response.json())
 //for each method
 shoe.forEach(shoebox)
 });
-
+//eventlistner
 let clickExample = document.querySelector("#clickExample");
 clickExample.addEventListener("mouseover", function() {
     console.log("I've been clicked");
 })
+//eventlistner 
 submitExample.addEventListener("submit", function(e){
     e.preventDefault()
     console.log("hello")
