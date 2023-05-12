@@ -12,7 +12,7 @@ clickExample.addEventListener("click", function() {
 })
 submitExample.addEventListener("submit", function(e){
     e.preventDefault()
-    console.log("hello");
+    
 })
 
 const shoebox = (shoedata) => {
