@@ -3,6 +3,16 @@
     padding: 0;
 
 }
+h2{
+    font-size: xx-large;
+     align-items: center;
+    margin-top: 9%;
+    padding-left: 20px;
+    margin: 20px;
+    font-style: italic
+    
+}
+
 .shoeDiv{
 
     align-items: center;
