@@ -4,16 +4,16 @@
 
 }
 .shoeDiv{
-    right: 0%;
+
     align-items: center;
     margin-top: 9%;
     padding-left: 20px;
-    height: auto;
-    width: 100%;
+    margin: 20px;
     font-style: italic;
+    font-size: large;
 }
 .shoeImage{
-    max-width: 300px;
+    max-width: 350px;
     max-height: auto;
     align-self: center;
     position: relative;
