@@ -58,3 +58,4 @@ image.addEventListener('click', function(){
     image_tracker = 'f';
     }
 })}
+//open index.html in the terminal

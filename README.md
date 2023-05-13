@@ -14,6 +14,7 @@ Install my project with git clone  git@github.com:bwallace4/phase-1-project.git
 ```bash
  $ npm install -g json-server
   cd my-phase-1-project
+  open index.html
 
 ```
 Requirements
