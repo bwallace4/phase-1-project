@@ -1,4 +1,4 @@
-//fetch db.json json-server --watch db.json
+//fetch db.json ...json-server --watch db.json in the terminal 
 const shoelist= document.querySelector(".shoe-list")
 console.log(shoelist);
 fetch("http://localhost:3000/shoe").then(response => response.json())
